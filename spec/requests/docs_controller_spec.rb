@@ -163,37 +163,7 @@ describe Docs::DocsController do
         end
       end
 
-      =begin 
-      context 'by date' do
-        before do
-          topic2.update(last_posted_at: Time.zone.now + 100)
-        end
-
-        it 'should return the list ordered descending' do
-          get "/docs.json?order=activity"
-
-          expect(response.status).to eq(200)
-
-          json = response.parsed_body
-          topics = json['topics']['topic_list']['topics']
-
-          expect(topics[0]['id']).to eq(topic.id)
-          expect(topics[1]['id']).to eq(topic2.id)
-        end
-
-        it 'should return the list ordered ascending with an additional parameter' do
-          get "/docs.json?order=activity&ascending=true"
-
-          expect(response.status).to eq(200)
-
-          json = response.parsed_body
-          topics = json['topics']['topic_list']['topics']
-
-          expect(topics[0]['id']).to eq(topic2.id)
-          expect(topics[1]['id']).to eq(topic.id)
-        end
-      end 
-      =end
+      
     end
 
     context 'when searching' do
