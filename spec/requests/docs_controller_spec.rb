@@ -163,7 +163,7 @@ describe Docs::DocsController do
         end
       end
 
-      context 'by date' do
+     =begin context 'by date' do
         before do
           topic2.update(last_posted_at: Time.zone.now + 100)
         end
@@ -191,7 +191,7 @@ describe Docs::DocsController do
           expect(topics[0]['id']).to eq(topic2.id)
           expect(topics[1]['id']).to eq(topic.id)
         end
-      end
+      end =end
     end
 
     context 'when searching' do
