@@ -77,18 +77,19 @@ module Docs
         SQL
       end
 
+      #results = results.reorder('topics.title') 
       if @filters[:order] == "title"
         if @filters[:ascending].present?
           results = results.reorder('topics.title')
         else
           results = results.reorder('topics.title DESC')
         end
-      elsif @filters[:order] == "activity"
-        if @filters[:ascending].present?
-          results = results.reorder('topics.last_posted_at')
-        else
-          results = results.reorder('topics.last_posted_at DESC')
-        end
+      #elsif @filters[:order] == "activity"
+      #  if @filters[:ascending].present?
+      #    results = results.reorder('topics.last_posted_at')
+      #  else
+      #    results = results.reorder('topics.last_posted_at DESC')
+      #  end
       end
 
       # conduct a second set of joins so we don't mess up the count
