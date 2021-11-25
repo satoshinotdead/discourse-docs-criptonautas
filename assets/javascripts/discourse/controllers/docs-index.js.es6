@@ -63,6 +63,7 @@ export default Controller.extend({
         direction: "desc", // or asc
       },
       orderColumn: "title",
+      ascending: true,
     });
   },
   @discourseComputed("categories", "categorySort", "categoryFilter")
