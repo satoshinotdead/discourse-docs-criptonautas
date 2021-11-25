@@ -62,6 +62,7 @@ export default Controller.extend({
         type: "numeric", // or alpha
         direction: "desc", // or asc
       },
+      orderColumn: "title",
     });
   },
   @discourseComputed("categories", "categorySort", "categoryFilter")
