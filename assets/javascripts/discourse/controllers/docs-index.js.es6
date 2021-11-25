@@ -55,7 +55,7 @@ export default Controller.extend({
     }
     this.setProperties({
       categorySort: {
-        type: "alpha", // alpha or nuimeric
+        type: "alpha", // alpha or numeric
         direction: "asc", // asc or desc
       },
       tagSort: {
