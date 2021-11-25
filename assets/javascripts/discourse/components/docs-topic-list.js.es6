@@ -10,10 +10,10 @@ export default Component.extend({
     return order === "title";
   },
 
-  @discourseComputed("order")
+  /* @discourseComputed("order")
   sortActivity(order) {
     return order === "activity";
-  },
+  }, */
 
   // need to handle clicks here since links are in a raw view
   click(e) {
@@ -24,11 +24,11 @@ export default Component.extend({
     }
   },
 
-  @action
+  /* @action
   sortListActivity() {
     this.sortBy("activity");
     return false;
-  },
+  }, */
 
   @action
   sortListTitle() {

@@ -285,8 +285,8 @@ export default Controller.extend({
     const ascending = this.ascending;
     if (column === "title") {
       this.set("orderColumn", "title");
-    } else if (column === "activity") {
-      this.set("orderColumn", "activity");
+    /* } else if (column === "activity") {
+      this.set("orderColumn", "activity"); */
     }
 
     if (!ascending && order) {
