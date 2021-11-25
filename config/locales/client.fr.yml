@@ -13,7 +13,7 @@ fr:
       title: "Docs"
       column_titles:
         topic: "Sujet"
-        
+        activity: "Activité"
       no_topics: "Aucun sujet dans Docs."
       categories: "Catégories"
       tags: "Étiquettes"

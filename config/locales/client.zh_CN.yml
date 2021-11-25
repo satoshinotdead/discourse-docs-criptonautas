@@ -13,7 +13,7 @@ zh_CN:
       title: "文档"
       column_titles:
         topic: "话题"
-        
+        activity: "活动"
       no_topics: "文档中没有话题。"
       categories: "分类"
       tags: "标签"

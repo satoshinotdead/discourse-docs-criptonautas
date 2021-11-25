@@ -7,7 +7,7 @@ en:
       title: "Docs"
       column_titles:
         topic: "Topic"
-        
+        activity: "Activity"
       no_topics: "No topics in Docs."
       categories: "Categories"
       categories_filter_placeholder: "Filter categories"

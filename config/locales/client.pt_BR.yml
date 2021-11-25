@@ -13,7 +13,7 @@ pt_BR:
       title: "Documentos"
       column_titles:
         topic: "Tópico"
-        
+        activity: "Atividade"
       no_topics: "Nenhum tópico no Documentos."
       categories: "Categorias"
       tags: "Etiquetas"
