@@ -245,7 +245,7 @@ export default Controller.extend({
     });
   },
 
-  @action
+ /*  @action
   updateSelectedCategories(category) {
     let filter = this.filterCategories;
     if (filter && filter.includes(category.id)) {
@@ -262,7 +262,7 @@ export default Controller.extend({
     });
 
     return false;
-  },
+  }, */
 
   @action
   performSearch(term) {
