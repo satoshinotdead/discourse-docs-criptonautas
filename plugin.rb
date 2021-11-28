@@ -26,9 +26,9 @@ after_initialize do
     if Search.respond_to? :advanced_filter
       Search.advanced_filter(/in:(kb|docs)/) do |posts|
         selected_categories = SiteSetting.docs_categories.split('|')
-        if selected_categories
+        =begin if selected_categories
           categories = Category.where('id IN (?)', selected_categories).pluck(:id)
-        end
+        end =end
 
         selected_tags = SiteSetting.docs_tags.split('|')
         if selected_tags
