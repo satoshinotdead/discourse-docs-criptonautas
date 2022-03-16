@@ -57,13 +57,15 @@ export default Controller.extend({
     }
     this.setProperties({
       categorySort: {
-        type: "numeric", // or alpha
-        direction: "desc", // or asc
+        type: "alpha", // alpha or numeric
+        direction: "asc", // asc or desc
       },
       tagSort: {
         type: "numeric", // or alpha
         direction: "desc", // or asc
       },
+      orderColumn: "title",
+      ascending: true,
     });
   },
   @discourseComputed("categories", "categorySort", "categoryFilter")
@@ -334,8 +336,8 @@ export default Controller.extend({
     const ascending = this.ascending;
     if (column === "title") {
       this.set("orderColumn", "title");
-    } else if (column === "activity") {
-      this.set("orderColumn", "activity");
+    /* } else if (column === "activity") {
+      this.set("orderColumn", "activity"); */
     }
 
     if (!ascending && order) {
