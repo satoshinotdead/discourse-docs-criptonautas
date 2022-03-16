@@ -191,8 +191,7 @@ describe Docs::DocsController do
 
           expect(topics[0]['id']).to eq(topic2.id)
           expect(topics[1]['id']).to eq(topic.id)
-        end
-      end 
+        end      
       =end
     end
 
